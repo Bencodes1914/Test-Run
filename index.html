@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Pharmacy Inventory Management.</title>
+    </head>
+    <body>
+     <header>
+         <div class="container">
+             <div class="header-content">
+                 <div class="logo">Community Pharmacy</div>
+                 <div class="user-info">
+                     <div class="user-name">Days Star Pharmaceuticals.</div>
+                     <div class="user-avatar">DSP</div>
+                 </div>
+             </div>
+         </div>
+     </header>
+     
+     <nav>
+         <div class="container">
+             <ul class="nav-list">
+                 <li><a href="#" class="active">Dashboard</a></li>
+                 <li><a href="#">Inventory</a></li>
+                 <li><a href="#">Orders</a></li>
+                 <li><a href="#">Suppliers</a></li>
+                 <li><a href="#">Reports</a></li>
+                 <li><a href="#">Settings</a></li>
+             </ul>
+         </div>
+     </nav>
+     
+     <div class="container">
+      <div class="add-medication-form">
+       <h2 class="section-title">Add New Medication</h2>
+       <form id="addMedicationForm">
+           <div class="form-row">
+               <div class="form-column">
+                   <div class="form-group">
+                       <label class="form-label">Medication Name</label>
+                       <input type="text" id="newMedicationName" class="form-input" required>
+                   </div>
+               </div>
+               <div class="form-column">
+                   <div class="form-group">
+                       <label class="form-label">Current Stock</label>
+                       <input type="number" id="newMedicationStock" class="form-input" min="1" required>
+                   </div>
+               </div>
+           </div>
+           <div class="form-row">
+               <div class="form-column">
+                   <div class="form-group">
+                       <label class="form-label">Threshold</label>
+                       <input type="number" id="newMedicationThreshold" class="form-input" min="1" required>
+                   </div>
+               </div>
+               <div class="form-column">
+                   <div class="form-group">
+                       <label class="form-label">Expiry Date</label>
+                       <input type="date" id="newMedicationExpiry" class="form-input" required>
+                   </div>
+               </div>
+           </div>
+           <div class="form-actions">
+               <button type="submit" class="btn-submit">Add Medication</button>
+           </div>
+       </form>
+   </div>             
+         </div>
+     </div>
+     
+     <div class="toast" id="toast">Order placed successfully!</div>
+     <script src="script.js"></script>
+</body>
+</html>     
